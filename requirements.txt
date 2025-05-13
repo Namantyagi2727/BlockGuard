@@ -1,0 +1,10 @@
+slither-analyzer==0.10.0
+openai>=1.14.0
+streamlit>=1.33
+requests>=2.31
+pandas>=2.2
+numpy>=1.26
+torch>=2.2        # small GRU for gas-fee predictor
+matplotlib>=3.8   # quick plots
+rich>=13.7
+python-dotenv>=1.0

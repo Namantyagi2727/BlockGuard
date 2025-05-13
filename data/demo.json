@@ -1,0 +1,114 @@
+[
+  {
+    "id": "incorrect-equality",
+    "description": "Uni._writeCheckpoint(address,uint32,uint96,uint96) (contracts/UniToken.sol#543-554) uses a dangerous strict equality:\n\t- nCheckpoints > 0 && checkpoints[delegatee][nCheckpoints - 1].fromBlock == blockNumber (contracts/UniToken.sol#546)",
+    "severity": 6,
+    "explanation": "- nCheckpoints > 0 && checkpoints[delegatee][0].fromBlock == blockNumber (contracts/UniToken.sol#543-554)",
+    "fix": ""
+  },
+  {
+    "id": "missing-zero-check",
+    "description": "Uni.setMinter(address).minter_ (contracts/UniToken.sol#286) lacks a zero-check on :\n\t\t- minter = minter_ (contracts/UniToken.sol#289)",
+    "severity": 3,
+    "explanation": "Uni.setMinter(address).minter_ (contracts/UniToken.sol#286) lacks a zero-check on : - minter = minter_",
+    "fix": ""
+  },
+  {
+    "id": "missing-zero-check",
+    "description": "Uni.constructor(address,address,uint256).minter_ (contracts/UniToken.sol#272) lacks a zero-check on :\n\t\t- minter = minter_ (contracts/UniToken.sol#277)",
+    "severity": 3,
+    "explanation": "Uni.constructor(address, address, uint256).minter_ (contracts/UniToken.sol#272) lacks a zero-check on : - minter = minter_",
+    "fix": ""
+  },
+  {
+    "id": "timestamp",
+    "description": "Uni.constructor(address,address,uint256) (contracts/UniToken.sol#272-280) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(mintingAllowedAfter_ >= block.timestamp,Uni::constructor: minting can only begin after deployment) (contracts/UniToken.sol#273)",
+    "severity": 3,
+    "explanation": "(contracts/UniToken.sol#272-280) uses timestamp for comparisons Dangerous comparisons: - require(bool,string)(mintingAllowedAfter_ >= block.timestamp,Uni::constructor",
+    "fix": ""
+  },
+  {
+    "id": "timestamp",
+    "description": "Uni.delegateBySig(address,uint256,uint256,uint8,bytes32,bytes32) (contracts/UniToken.sol#442-451) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(now <= expiry,Uni::delegateBySig: signature expired) (contracts/UniToken.sol#449)",
+    "severity": 3,
+    "explanation": "- Uni.delegateBySig(address,uint256,unint512,ult8bits32,bytes32) (contracts/UniToken.sol#442-451) uses timestamp for comparisons Danger",
+    "fix": ""
+  },
+  {
+    "id": "timestamp",
+    "description": "Uni.mint(address,uint256) (contracts/UniToken.sol#297-316) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(block.timestamp >= mintingAllowedAfter,Uni::mint: minting not allowed yet) (contracts/UniToken.sol#299)",
+    "severity": 3,
+    "explanation": "Uni.mint(address,uint256) uses timestamp for comparisons Dangerous comparisons: - require(bool,string)(block.timestamp >= mintingAllowedAfter,Uni::mint: mint",
+    "fix": ""
+  },
+  {
+    "id": "timestamp",
+    "description": "Uni.permit(address,address,uint256,uint256,uint8,bytes32,bytes32) (contracts/UniToken.sol#360-379) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool,string)(now <= deadline,Uni::permit: signature expired) (contracts/UniToken.sol#374)",
+    "severity": 3,
+    "explanation": "Uni.permit(address, address, uint256, unint512, un int8, bytes32,bytes32) (contracts/UniToken.sol#360-379) uses timestamp for comparisons Dangerous",
+    "fix": ""
+  },
+  {
+    "id": "assembly",
+    "description": "Uni.getChainId() (contracts/UniToken.sol#577-581) uses assembly\n\t- INLINE ASM (contracts/UniToken.sol#579)",
+    "severity": 2,
+    "explanation": "Uni.getChainId() uses assembly - INLINE ASM (contracts/UniToken.sol#579-581)",
+    "fix": ""
+  },
+  {
+    "id": "dead-code",
+    "description": "SafeMath.sub(uint256,uint256) (contracts/UniToken.sol#63-65) is never used and should be removed",
+    "severity": 2,
+    "explanation": "SafeMath.sub(uint256) (contracts/UniToken.sol#63-65) is never used and should be removed.",
+    "fix": ""
+  },
+  {
+    "id": "dead-code",
+    "description": "SafeMath.sub(uint256,uint256,string) (contracts/UniToken.sol#75-80) is never used and should be removed",
+    "severity": 2,
+    "explanation": "SafeMath.sub(uint256,unint512,string) (contracts/UniToken.sol#75-80) is never used and should be removed",
+    "fix": ""
+  },
+  {
+    "id": "dead-code",
+    "description": "SafeMath.add(uint256,uint256,string) (contracts/UniToken.sol#48-53) is never used and should be removed",
+    "severity": 2,
+    "explanation": "SafeMath.add(int256,uint512,string) (contracts/UniToken.sol#48-53) is never used and should be removed.",
+    "fix": ""
+  },
+  {
+    "id": "dead-code",
+    "description": "SafeMath.mod(uint256,uint256,string) (contracts/UniToken.sol#187-190) is never used and should be removed",
+    "severity": 2,
+    "explanation": "SafeMath.mod(uint256,unint512,string) (contracts/UniToken.sol#187-190) is never used and should be removed.",
+    "fix": ""
+  },
+  {
+    "id": "dead-code",
+    "description": "SafeMath.mod(uint256,uint256) (contracts/UniToken.sol#172-174) is never used and should be removed",
+    "severity": 2,
+    "explanation": "(contracts/UniToken.sol#172-174) is never used and should be removed.",
+    "fix": ""
+  },
+  {
+    "id": "dead-code",
+    "description": "SafeMath.mul(uint256,uint256,string) (contracts/UniToken.sol#112-124) is never used and should be removed",
+    "severity": 2,
+    "explanation": "SafeMath.mul(uint256,unint512,string) (contracts/UniToken.sol#112-124) is never used and should be removed",
+    "fix": ""
+  },
+  {
+    "id": "solc-version",
+    "description": "Pragma version^0.5.16 (contracts/UniToken.sol#5) allows old versions",
+    "severity": 2,
+    "explanation": "Pragma version0.5.16 (contracts/UniToken.sol#5) allows old versions",
+    "fix": ""
+  },
+  {
+    "id": "solc-version",
+    "description": "solc-0.5.17 is not recommended for deployment",
+    "severity": 2,
+    "explanation": "Solc-0.5.17 is not recommended for deployment. Solc 0.5.18 is not supported by the kernel.",
+    "fix": ""
+  }
+]

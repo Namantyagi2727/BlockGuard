@@ -1,0 +1,86 @@
+[
+  {
+    "id": "solc-version",
+    "description": "Pragma version^0.8.20 (oz/contracts/token/ERC20/IERC20.sol#4) necessitates a version too recent to be trusted. Consider deploying with 0.8.18.",
+    "severity": 2,
+    "explanation": "Pragma version0.8.20 (oz/contracts/token/ERC20/IERC20.sol#4) necessitates a version too recent to be trusted. Consider deploying with 0.8.18.",
+    "fix": ""
+  },
+  {
+    "id": "solc-version",
+    "description": "solc-0.8.30 is not recommended for deployment",
+    "severity": 2,
+    "explanation": "solc-0.8.30 is not recommended for deployment. Solc-0.9.0 is not supported for deployment",
+    "fix": ""
+  },
+  {
+    "id": "dead-code",
+    "description": "Context._contextSuffixLength() (oz/contracts/utils/Context.sol#25-27) is never used and should be removed",
+    "severity": 2,
+    "explanation": "The suffix length function (oz/contracts/utils/Context.sol#25-27) is never used and should be removed.",
+    "fix": ""
+  },
+  {
+    "id": "dead-code",
+    "description": "ERC20._burn(address,uint256) (oz/contracts/token/ERC20/ERC20.sol#229-234) is never used and should be removed",
+    "severity": 2,
+    "explanation": "ERC20._burn(address,uint256) (oz/contracts/token/ERC20/ERC20.sol#229-234) is never used and should be removed",
+    "fix": ""
+  },
+  {
+    "id": "dead-code",
+    "description": "Context._msgData() (oz/contracts/utils/Context.sol#21-23) is never used and should be removed",
+    "severity": 2,
+    "explanation": "Context._msgData() (oz/contracts/utils/Context.sol#21-23) is never used and should be removed.",
+    "fix": ""
+  },
+  {
+    "id": "dead-code",
+    "description": "ERC20._mint(address,uint256) (oz/contracts/token/ERC20/ERC20.sol#214-219) is never used and should be removed",
+    "severity": 2,
+    "explanation": "ERC20._mint(address,uint256) (oz/contracts/token/ERC20/ERC20.sol#214-219) is never used and should be removed",
+    "fix": ""
+  },
+  {
+    "id": "solc-version",
+    "description": "Pragma version^0.8.20 (oz/contracts/token/ERC20/extensions/IERC20Metadata.sol#4) necessitates a version too recent to be trusted. Consider deploying with 0.8.18.",
+    "severity": 2,
+    "explanation": "Pragma version0.8.20 (oz/contracts/token/ERC20/extensions/IERC20Metadata.sol#4) necessitates a version too recent to be trusted. Consider deploying with 0.8.",
+    "fix": ""
+  },
+  {
+    "id": "solc-version",
+    "description": "Pragma version^0.8.20 (oz/contracts/interfaces/draft-IERC6093.sol#3) necessitates a version too recent to be trusted. Consider deploying with 0.8.18.",
+    "severity": 2,
+    "explanation": "Pragma version0.8.20 (oz/contracts/interfaces/draft-IERC6093.sol#3) requires a version too recent to be trusted. Consider deploying with 0.8.18.",
+    "fix": ""
+  },
+  {
+    "id": "solc-version",
+    "description": "Pragma version^0.8.20 (oz/contracts/utils/Context.sol#4) necessitates a version too recent to be trusted. Consider deploying with 0.8.18.",
+    "severity": 2,
+    "explanation": "Consider deploying Pragma version0.8.20 (oz/contracts/utils/Context.sol#4).",
+    "fix": ""
+  },
+  {
+    "id": "solc-version",
+    "description": "Pragma version^0.8.20 (oz/contracts/token/ERC20/ERC20.sol#4) necessitates a version too recent to be trusted. Consider deploying with 0.8.18.",
+    "severity": 2,
+    "explanation": "Pragma version 0.8.20 (oz/contracts/token/ERC20/ERC20.sol#4) necessitates a version too recent to be trusted. Consider deploying with 0.8.18",
+    "fix": ""
+  },
+  {
+    "id": "solc-version",
+    "description": "Pragma version^0.8.20 (oz/contracts/token/ERC20/IERC20.sol#4) necessitates a version too recent to be trusted. Consider deploying with 0.8.18.",
+    "severity": 2,
+    "explanation": "Pragma version0.8.20 (oz/contracts/token/ERC20/IERC20.sol#4) necessitates a version too recent to be trusted. Consider deploying with 0.8.18.",
+    "fix": ""
+  },
+  {
+    "id": "solc-version",
+    "description": "solc-0.8.30 is not recommended for deployment",
+    "severity": 2,
+    "explanation": "solc-0.8.30 is not recommended for deployment. Solc-0.9.0 is not supported for deployment",
+    "fix": ""
+  }
+]
